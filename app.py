@@ -27,7 +27,8 @@ def yamano():
 
     img_url = os.path.join(app.config['UPLOAD_FOLDER'], filename)
     fs.save(img_url)
-
+    ##ここから学習の分を書く
+    ##img_urlが画像のパス。
 
     return render_template("upload.html",url=img_url)
     
